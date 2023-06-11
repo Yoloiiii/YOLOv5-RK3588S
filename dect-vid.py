@@ -10,7 +10,7 @@ from rknnlite.api import RKNNLite
 import math
 from PIL import Image
  
- 
+#模型文件 
 RKNN_MODEL = 'best.rknn'
 DATASET = './dataset.txt'
  
@@ -19,6 +19,7 @@ QUANTIZE_ON = True
 OBJ_THRESH = 0.25
 NMS_THRESH = 0.45
 IMG_SIZE = 640
+#类别种类
 CLASSES = ("gemma", "ripe", "pollinated")
  
 """CLASSES = ("person", "bicycle", "car", "motorbike ", "aeroplane ", "bus ", "train", "truck ", "boat", "traffic light",
@@ -351,6 +352,7 @@ print('done')
  
 # Create a VideoCapture object and read from input file
 # If the input is the camera, pass 0 instead of the video file name
+#视频路径，0代表调用摄像头实时检测
 cap = cv2.VideoCapture("imgs/4.mp4")
 #cap = cv2.VideoCapture(0)
  
