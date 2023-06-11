@@ -1,0 +1,3 @@
+conda activate rknnlite
+python dect-pic.py
+python dect-vid.py
