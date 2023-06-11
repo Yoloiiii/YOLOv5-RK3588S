@@ -10,7 +10,7 @@ from rknnlite.api import RKNNLite
 import math
 from PIL import Image
  
- 
+#模型文件 
 RKNN_MODEL = 'best.rknn'
 DATASET = './dataset.txt'
  
@@ -19,6 +19,7 @@ QUANTIZE_ON = True
 OBJ_THRESH = 0.25
 NMS_THRESH = 0.45
 IMG_SIZE = 640
+#类别种类
 CLASSES = ("gemma", "ripe", "pollinated")
  
 """CLASSES = ("person", "bicycle", "car", "motorbike ", "aeroplane ", "bus ", "train", "truck ", "boat", "traffic light",
@@ -359,7 +360,7 @@ print('done')
 # Check if camera opened successfully
 #if (cap.isOpened()== False): 
 #  print("Error opening video stream or file")
-# pic
+# 图片路径
 img = cv2.imread('imgs/4.jpg', cv2.IMREAD_COLOR)
 imgL = img[0:960, 0:1280]
 imgR = img[0:960, 1280:2560]
